@@ -15,12 +15,12 @@ public class Tablero {
     
     public void mostrarTablero(){        
         areaTexto.setText("     0  1  2  3  4  5  6  7  8  9\n");
-        areaTexto.append("   ┌────────────────────────────────┐\n");
+        areaTexto.append("   ┌─────────────────────────────────┐\n");
         for(int i=0; i<10; i++){
             for(int j=0; j<10; j++){
                 switch(j){
                     case 0:
-                        areaTexto.append(" " +letras[i] + " │" + mapa[i][j] + "  ");
+                        areaTexto.append(" " +letras[i] + " │ " + mapa[i][j] + "  ");
                         break;
                     case 9:
                         areaTexto.append(mapa[i][j] + " │");
@@ -32,7 +32,7 @@ public class Tablero {
             }
             areaTexto.append("\n");
         }
-        areaTexto.append("   └────────────────────────────────┘");
+        areaTexto.append("   └─────────────────────────────────┘");
     }
        
     public String[][] getMapa(){
